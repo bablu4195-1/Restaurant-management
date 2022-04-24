@@ -11,7 +11,7 @@
       
     @include('admin.navbar')
     <div style="position:relative;top: 60px; right: -150px;">
-        <form action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
+        <form action="{{url('/uploadmenu')}}" method="post" enctype="multipart/form-data">
             @csrf
      <div>
          <label>Title</label>
@@ -23,7 +23,7 @@
       </div>   
      <div>
          <label>Image</label>
-         <input style="color:blue;" type="file" name="Iamge"  required>
+         <input style="color:blue;" type="file" name="image"  required>
       </div>   
      <div>
          <label>Description</label>
